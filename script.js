@@ -8,27 +8,28 @@ form.addEventListener('submit', function(e){
 
     let nome = document.getElementById("nome").value;
     let senha = document.getElementById("senha").value;
-    let mensagem = document.getElementById("mensagem");
-
-    mensagem.innerHTML = "";
 
     if(nome.trim() === 'groot1'){
-        mensagem.innerHTML = "<div class='erro'><p> Usuário incorreto!</p></div>";
+
+    }else{
+       alert('Usuário incorreto');
         valido = false
     }
 
-    if(senha.trim() !== '1418'){
-        mensagem.innerHTML = "<div class='erro'><p> Senha incorreta!</p></div>";
+    if(nome.trim() === '1418'){
+
+    }else{
+       alert('Senha incorreta');
         valido = false
     }
 
     if(nome.trim() === " "){
-        mensagem.innerHTML = "<div class='erro'><p> Digite o usuário para continuar!</p></div>";
+        alert('Campo usuário vazio');
         valido = false
     }
 
     if(senha.trim() === " "){
-        mensagem.innerHTML = "<div class='erro'><p> Digite a senha para continuar!</p></div>";
+        alert('Campo senha vazio');
         valido = false
     }
 
