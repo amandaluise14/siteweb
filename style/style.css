@@ -1,4 +1,22 @@
+
 body {
-    background-image: url('../assets/image/groot_fundo.jpg')
-   
+    background-image: url('../assets/image/groot_fundo_google.jpg')
+}
+#container{
+    background-color: rgb(238, 209, 182) !important;
+    border-radius: 4%;
+
+}
+h3 {
+color:  rgb(136, 71, 15);
+}
+
+#button{
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid;
+border-color: rgb(49, 66, 49);
+background-color: rgb(129, 160, 129);
+border-radius: 8px;
 }
