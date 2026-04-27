@@ -11,12 +11,30 @@ form.addEventListener('submit', function(e){
     let mensagem = document.getElementById("mensagem");
 
     mensagem.innerHTML = "";
-    
-    if(nome.lenght !== groot1){
+
+    if(nome.trim() === 'groot1'){
         mensagem.innerHTML = "<div class='erro'><p> Usuário incorreto!</p></div>";
+        valido = false
     }
 
-    if(senha.lenght !== 1418){
+    if(senha.trim() !== '1418'){
         mensagem.innerHTML = "<div class='erro'><p> Senha incorreta!</p></div>";
+        valido = false
+    }
+
+    if(nome.trim() === " "){
+        mensagem.innerHTML = "<div class='erro'><p> Digite o usuário para continuar!</p></div>";
+        valido = false
+    }
+
+    if(senha.trim() === " "){
+        mensagem.innerHTML = "<div class='erro'><p> Digite a senha para continuar!</p></div>";
+        valido = false
+    }
+
+   if(valido){
+
+        alert('Formulário enviado com sucesso!');
+        // form.reset();
     }
 })
