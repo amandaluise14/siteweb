@@ -9,6 +9,16 @@ form.addEventListener('submit', function(e){
     let nome = document.getElementById("nome").value;
     let senha = document.getElementById("senha").value;
 
+    if(nome.trim() === ""){
+        alert('Campo usuário vazio');
+        valido = false
+    }
+
+    if(senha.trim() === ""){
+        alert('Campo senha vazio');
+        valido = false
+    }
+
     if(nome.trim() === 'groot1'){
 
     }else{
@@ -16,20 +26,10 @@ form.addEventListener('submit', function(e){
         valido = false
     }
 
-    if(nome.trim() === '1418'){
+    if(senha.trim() === '1418'){
 
     }else{
        alert('Senha incorreta');
-        valido = false
-    }
-
-    if(nome.trim() === " "){
-        alert('Campo usuário vazio');
-        valido = false
-    }
-
-    if(senha.trim() === " "){
-        alert('Campo senha vazio');
         valido = false
     }
 
