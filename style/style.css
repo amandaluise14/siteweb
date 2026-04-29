@@ -2,29 +2,28 @@
     background-image: url('../assets/image/groot_fundo_google.jpg')
 }
 #pagina_principal{
-     background-color: rgba(177, 184, 144, 0.89);
-
+      background-color: rgba(177, 184, 144, 0.89);
 }
 #pagina_historia{
     background-color: rgba(177, 184, 144, 0.89); 
 }
 #container{
-    background-color: rgba(240, 202, 146, 0.89) !important;
-    border-radius: 4%;
+background-color: rgba(240, 202, 146, 0.932) !important;
+border-radius: 15px;
+padding: 30px;
 
 }
 h3 {
 color:  rgb(136, 71, 15);
 }
 
-#button{
-width: 100%;
-padding: 8px;
-margin-top: 5px;
-border: 1px solid;
-border-color: rgb(49, 66, 49);
-background-color: rgb(129, 160, 129);
-border-radius: 8px;
+button {
+  background: linear-gradient(90deg, #6a8f6a, #385238);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  transition: 0.3s;
 }
 
 #navbar {
@@ -35,6 +34,7 @@ padding: 5px;
 background-color: rgba(72, 75, 58, 0.89);
 color: rgb(245, 220, 220);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+box-shadow: 0px 8px 20px rgba(70, 97, 56, 0.473);
 }
 
 #icon{
@@ -50,12 +50,15 @@ li {
     margin-right: 15px;
     text-decoration: none;
 }
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
 #home{
 align-items: center;
 text-align: center;
 color: rgb(62, 82, 64);
 }
-
 p{
 text-align: center;
 line-height: 1.6;
@@ -63,7 +66,12 @@ font-size: 16px;
 max-width: 700px;
 margin: 0 auto 20px auto;
 }
-
+img {
+  display: block;
+  margin: 40px auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
 h4{
 text-align: center;
 line-height: 1.6;
