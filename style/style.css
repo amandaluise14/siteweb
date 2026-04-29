@@ -73,16 +73,14 @@ margin: 0 auto 20px auto;
 }
 
 #trajetoria{
-
 align-items: center;
 text-align: center;
 color: rgb(62, 82, 64);
- background-color: rgba(177, 184, 144, 0.89); 
+background-color: rgba(177, 184, 144, 0.89); 
 }   
 
 #historia{
 align-items: center;
 text-align: center;
 color: rgb(62, 82, 64);
-
 }
