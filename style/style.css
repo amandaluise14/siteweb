@@ -33,3 +33,8 @@ background-color: rgba(72, 75, 58, 0.89);
 color: rgb(245, 220, 220);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#icon{
+    width: 100px;
+    height: 50px;
+}
