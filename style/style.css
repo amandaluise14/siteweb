@@ -3,7 +3,7 @@ body {
     background-image: url('../assets/image/groot_fundo_google.jpg')
 }
 #container{
-    background-color: rgb(238, 209, 182) !important;
+    background-color: rgba(216, 189, 139, 0.89) !important;
     border-radius: 4%;
 
 }
@@ -19,4 +19,14 @@ border: 1px solid;
 border-color: rgb(49, 66, 49);
 background-color: rgb(129, 160, 129);
 border-radius: 8px;
+}
+
+#navbar {
+ display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+background-color: rgb(105, 12, 12);
+color: rgb(245, 220, 220);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
