@@ -1,9 +1,12 @@
-
-body {
+#pagina_login {
     background-image: url('../assets/image/groot_fundo_google.jpg')
 }
+#pagina_principal{
+     background-color: rgba(177, 184, 144, 0.89);
+
+}
 #container{
-    background-color: rgba(216, 189, 139, 0.89) !important;
+    background-color: rgba(240, 202, 146, 0.89) !important;
     border-radius: 4%;
 
 }
