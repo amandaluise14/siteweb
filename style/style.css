@@ -63,3 +63,19 @@ font-size: 16px;
 max-width: 700px;
 margin: 0 auto 20px auto;
 }
+h4{
+text-align: center;
+line-height: 1.6;
+font-size: 16px;
+max-width: 700px;
+margin: 0 auto 20px auto;
+}
+
+#trajetoria{
+
+align-items: center;
+text-align: center;
+color: rgb(62, 82, 64);
+ background-color: rgba(177, 184, 144, 0.89); 
+}   
+
