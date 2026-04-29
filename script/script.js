@@ -40,7 +40,7 @@ form.addEventListener('submit', function(e){
     }
 
     if(nome === 'groot1' && senha === '1418'){
-        window.location.href = "index2.html";
+        window.location.href = "home.html";
         } else {
     alert("Usuário ou senha incorretos");
   }
