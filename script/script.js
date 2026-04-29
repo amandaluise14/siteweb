@@ -38,4 +38,10 @@ form.addEventListener('submit', function(e){
         alert('Acesso permitido!');
         // form.reset();
     }
+
+    if(nome === 'groot1' && senha === '1418'){
+        window.location.href = "index2.html";
+        } else {
+    alert("Usuário ou senha incorretos");
+  }
 })
