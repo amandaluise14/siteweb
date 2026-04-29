@@ -35,7 +35,7 @@ form.addEventListener('submit', function(e){
 
    if(valido){
 
-        alert('Formulário enviado com sucesso!');
+        alert('Acesso permitido!');
         // form.reset();
     }
 })
