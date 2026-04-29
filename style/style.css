@@ -25,11 +25,11 @@ border-radius: 8px;
 }
 
 #navbar {
- display:flex;
+display:flex;
 justify-content: space-between;
 align-items: center;
 padding: 5px;
-background-color: rgb(105, 12, 12);
+background-color: rgba(72, 75, 58, 0.89);
 color: rgb(245, 220, 220);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
