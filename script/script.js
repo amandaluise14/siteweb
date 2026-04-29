@@ -45,3 +45,40 @@ form.addEventListener('submit', function(e){
     alert("Usuário ou senha incorretos");
   }
 })
+
+let formComentario = document.getElementById('formulario');
+
+if(formComentario){
+
+    let lista = document.getElementById('listaComentarios');
+    let dados = [];
+
+    formComentario.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        let nomeComentario = document.getElementById("nomeComentario").value;
+        let comentario = document.getElementById("comentario").value;
+
+        let usuario = { nomeComentario, comentario };
+
+        dados.push(usuario);
+
+        mostrarComentarios();
+
+        formComentario.reset();
+    });
+
+    function mostrarComentarios(){
+        lista.innerHTML = "";
+
+        dados.forEach(function(user){
+            let div = document.createElement("div");
+            div.classList.add("comentario");
+
+            div.innerHTML = `<strong>${user.nomeComentario}</strong><p>${user.comentario}</p>`;
+
+            lista.appendChild(div);
+        });
+    }
+     mostrarComentarios();
+}
