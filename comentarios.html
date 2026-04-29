@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>História Groot</title>
+    <title>Comentarios Groot</title>
 </head>
-<body id="trajetoria">
+<body id="comentarios">
     <header>
         <nav id="navbar">
             <a href="index.html">
@@ -21,17 +21,17 @@
             </ul>
         </nav>
     </header>
-    <div id="home">
-    <h1>Curiosidades</h1>
+    
+    <div class="comentarios">
+    <h2>Comentários</h2>
 
-    <p>A frase <strong>“I am Groot” </strong> tem significados diferentes dependendo do tom e da situação — é quase como uma linguagem própria.</p><br>
-<p>Nos bastidores, Vin Diesel gravou a frase em vários idiomas.</p><br>
-<p>James Gunn (diretor dos filmes) já explicou que Groot não fala pouco — ele fala uma língua diferente.</p><br>
-<p>Rocket entende Groot porque passou muito tempo com ele.</p><br>
-<p>Existe uma teoria de que cada “novo Groot” não é exatamente o mesmo, mas sim um “descendente” do anterior.</p><br>
+    <form id="formComentario">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <textarea id="comentario" placeholder="Escreva seu comentário..." required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 
- <img id="groot" src="assets/image/groot_planta.png" alt="Fases do Groot">
- <img id="fixed" src="assets/image/grootfixed.png" alt="groot">
+    <div id="listaComentarios"></div>
 </div>
 </body>
 </html>

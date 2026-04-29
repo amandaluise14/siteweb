@@ -111,3 +111,33 @@ height: 250;
     height: 200px;
     margin-bottom: 0;
 }
+
+#comentarios{
+align-items: center;
+text-align: center;
+color: rgb(62, 82, 64);
+background-color: rgba(177, 184, 144, 0.89);    
+}
+
+.comentarios {
+    max-width: 500px;
+    margin: auto;
+    font-family: Arial;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+#comentar {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.comentario {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+}
