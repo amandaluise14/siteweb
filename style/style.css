@@ -46,7 +46,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
   }
 
-  li {
+li {
     margin-right: 15px;
     text-decoration: none;
 }
@@ -63,6 +63,7 @@ font-size: 16px;
 max-width: 700px;
 margin: 0 auto 20px auto;
 }
+
 h4{
 text-align: center;
 line-height: 1.6;
@@ -79,3 +80,9 @@ color: rgb(62, 82, 64);
  background-color: rgba(177, 184, 144, 0.89); 
 }   
 
+#historia{
+align-items: center;
+text-align: center;
+color: rgb(62, 82, 64);
+
+}
