@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Groot</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body  id="perguntas">
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img id="icon" src="assets/image/logo.png" alt="Logo Guardiões da Galáxia">
+            </a>
+            <h2> Eu sou Groot... e isso já diz tudo</h2>
+
+            <ul id="links">
+                <li> <a href="historia.html">História</li></a>
+                <li> <a href="trajetoria.html">Trajetória </li></a>
+                <li> <a href="curiosidade.html">Curiosidades</li></a>
+                <li> <a href="comentarios.html">Comentários</li></a>
+                <li> <a href="perguntas.html">Perguntas</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-personagem">
+
+    <h2>Sobre você e o Groot</h2>
+
+    <form id="formPersonagem">
+
+        <label>Seu nome:</label>
+        <input type="text" id="nomePergunta" placeholder="Digite seu nome">
+
+        <label>Você gosta do Groot?</label>
+        <select id="gosta">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label>Qual sua versão favorita?</label>
+        <select id="versao">
+            <option value="">Selecione</option>
+            <option>Baby Groot</option>
+            <option>Groot adolescente</option>
+            <option>Groot adulto</option>
+        </select>
+
+        <label>Qual sua cena favorita?</label>
+        <textarea id="cena" placeholder="Descreva a cena"></textarea>
+
+        <button type="submit">Enviar</button>
+
+        <p id="mensagem"></p>
+
+    </form>
+<div id="listaRespostas">
+</div>
+</div>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 let form = document.getElementById('formulario');
 
+if(form){
 form.addEventListener('submit', function(e){
 
     e.preventDefault();
@@ -33,26 +34,21 @@ form.addEventListener('submit', function(e){
         valido = false
     }
 
-   if(valido){
-
-        alert('Acesso permitido!');
-        // form.reset();
-    }
-
     if(nome === 'groot1' && senha === '1418'){
         window.location.href = "home.html";
+        alert('Acesso permitido!');
         } else {
     alert("Usuário ou senha incorretos");
   }
 })
+}
 
-let formComentario = document.getElementById('formulario');
+let formComentario = document.getElementById('formularioComentario');
 
 if(formComentario){
 
     let lista = document.getElementById('listaComentarios');
 
-    // Recupera comentários salvos
     let dados = JSON.parse(localStorage.getItem("comentarios")) || [];
 
     mostrarComentarios();
@@ -107,4 +103,43 @@ if(formComentario){
 
         mostrarComentarios();
     }
+}
+
+let formPergunta = document.getElementById("formPersonagem");
+let listaRespostas = document.getElementById("listaRespostas");
+
+if(formPergunta){
+formPergunta.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nomePergunta = document.getElementById("nomePergunta").value.trim();
+    let gosta = document.getElementById("gosta").value;
+    let versao = document.getElementById("versao").value;
+    let cena = document.getElementById("cena").value.trim();
+    let mensagem = document.getElementById("mensagem");
+
+    let valido = true;
+
+
+    if(nomePergunta === "" || gosta === "" || versao === "" || cena === ""){
+        alert("Preencha todos os campos!");
+        valido = false;
+    }
+
+ if (valido){
+
+        let resposta = document.getElementById('listaRespostas');
+
+        resposta.innerHTML = `
+
+        Dados enviados: <br>
+        Nome: ${nomePergunta} <br>
+        gosta: ${gosta} <br>
+        versao: ${versao} <br>
+        cena: ${cena} <br>
+        `;
+        formPergunta.reset();
+        
+    }
+})
 }

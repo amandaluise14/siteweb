@@ -145,3 +145,44 @@ input, textarea {
     padding: 5px;
     transition: 0.3s;
 }
+
+.form-personagem {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #314b31;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:start;
+}
+
+.form-personagem input,
+.form-personagem select,
+.form-personagem textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.resposta {
+    background: #314b31;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+#perguntas{
+align-items: center;
+text-align: center;
+color: rgb(62, 82, 64);
+background-color: rgba(177, 184, 144, 0.89);    
+}
