@@ -141,3 +141,12 @@ input, textarea {
     margin-top: 10px;
     padding: 5px;
 }
+
+#botaoExcluir{
+    background: linear-gradient(90deg, #6a8f6a, #385238);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}

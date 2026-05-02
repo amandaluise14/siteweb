@@ -51,17 +51,31 @@ let formComentario = document.getElementById('formulario');
 if(formComentario){
 
     let lista = document.getElementById('listaComentarios');
-    let dados = [];
+
+    // Recupera comentários salvos
+    let dados = JSON.parse(localStorage.getItem("comentarios")) || [];
+
+    mostrarComentarios();
 
     formComentario.addEventListener('submit', function(e){
         e.preventDefault();
 
-        let nomeComentario = document.getElementById("nomeComentario").value;
-        let comentario = document.getElementById("comentario").value;
+        let nomeComentario = document.getElementById("nomeComentario").value.trim();
+        let comentario = document.getElementById("comentario").value.trim();
 
-        let usuario = { nomeComentario, comentario };
+        if(nomeComentario === "" || comentario === ""){
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        let usuario = {
+            nomeComentario,
+            comentario
+        };
 
         dados.push(usuario);
+
+        localStorage.setItem("comentarios", JSON.stringify(dados));
 
         mostrarComentarios();
 
@@ -71,14 +85,26 @@ if(formComentario){
     function mostrarComentarios(){
         lista.innerHTML = "";
 
-        dados.forEach(function(user){
+        dados.forEach(function(user, index){
             let div = document.createElement("div");
             div.classList.add("comentario");
 
-            div.innerHTML = `<strong>${user.nomeComentario}</strong><p>${user.comentario}</p>`;
+            div.innerHTML = `
+                <strong>${user.nomeComentario}</strong>
+                <p>${user.comentario}</p>
+                <button id="botaoExcluir"nonclick="excluirComentario(${index})">Excluir</button>
+                <hr>
+            `;
 
             lista.appendChild(div);
         });
     }
-     mostrarComentarios();
+
+    window.excluirComentario = function(index){
+        dados.splice(index, 1);
+
+        localStorage.setItem("comentarios", JSON.stringify(dados));
+
+        mostrarComentarios();
+    }
 }
