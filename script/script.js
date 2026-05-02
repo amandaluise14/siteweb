@@ -128,6 +128,7 @@ formPergunta.addEventListener("submit", function(e){
 
  if (valido){
 
+        alert("Dados enviados com sucesso!");
         let resposta = document.getElementById('listaRespostas');
 
         resposta.innerHTML = `
